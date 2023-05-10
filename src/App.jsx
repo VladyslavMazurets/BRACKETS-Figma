@@ -1,7 +1,13 @@
 import React from 'react';
 
+import Home from './components/Home';
+
 function App() {
-  return <div className="text-8xl">Hello</div>;
+  return (
+    <>
+      <Home />
+    </>
+  );
 }
 
 export default App;
