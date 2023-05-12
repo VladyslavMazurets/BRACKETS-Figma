@@ -6,19 +6,21 @@ import homeBg from '../assets/img/home-bg.png';
 import vector from '../assets/img/Vector.png';
 import patern from '../assets/img/pattern.png';
 import section from '../assets/img/section.png';
+import leftArrow from '../assets/img/left-arrow.png';
+import rightArrow from '../assets/img/right-arrow.png';
 
 function Home() {
   return (
     <div className="-mt-[100px]">
-      <div className="relative z-40 h-screen bg-gradient">
+      <div className="relative z-40 h-[757px] bg-gradient">
         <div
-          className="relativ z-50 w-[689px] flex flex-col 
+          className="relativ z-50 max-w-[689px] flex flex-col 
           items-center mx-auto gap-[44px] pt-[159px]"
         >
           <p
-            className="h-[176px] w-[628px] flex flex-col items-center mt-[8px]
-              text-center font-poppins font-bold text-[70px] text-white 
-              leading-[125%]"
+            className="h-[176px] max-w-[628px] flex flex-col items-center 
+            mt-[8px] text-center font-poppins font-bold text-[70px] text-white 
+            leading-[125%]"
           >
             New generation
             <br />
@@ -55,12 +57,7 @@ function Home() {
             </a>
           </div>
 
-          <img
-            src={group}
-            alt="Group_img"
-            className="absolute right-[640px] 
-                  object-cover"
-          />
+          <img src={group} alt="Group_img" className="absolute right-[635px]" />
         </div>
 
         <img
@@ -86,10 +83,16 @@ function Home() {
       </div>
 
       <div
-        className="absolute z-40 top-[613px] left-[328px] w-[1353px]
-       h-[658px]"
+        className="absolute z-40 top-[613px] left-[283.5px] w-[1353px] h-[658px]
+      border-4 border-red-700 flex items-center justify-center"
       >
-        <img src={section} alt="Section_Img" />
+        <img
+          src={section}
+          alt="Section_Img"
+          className="w-[1120px] h-[658px] block object-cover rounded-xl"
+        />
+        <img src={leftArrow} alt="Left_Arrow" className="absolute" />
+        <img src={rightArrow} alt="Right_Arrow" className="absolute" />
       </div>
     </div>
   );

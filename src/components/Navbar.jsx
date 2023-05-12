@@ -3,9 +3,9 @@ import React from 'react';
 import logo from '../assets/img/logo.png';
 import arrow from '../assets/img/arrow.png';
 
-const linkStyle = `w-[96px] h-[24px] flex items-center gap-[12px] font-poppins 
-text-white text-base cursor-pointer`;
-const arrowStyle = 'w-[12px] h-[16px] object-cover';
+const linkStyle = `max-w-[96px] h-[24px] flex items-center gap-[12px] 
+font-poppins text-white text-base cursor-pointer`;
+const arrowStyle = 'max-w-[12px] h-[16px] object-cover';
 const buttonStyle = 'font-poppins text-base text-white';
 
 function Navbar() {
@@ -22,18 +22,18 @@ function Navbar() {
           <p>Features</p>
           <img src={arrow} alt="Arrow" className={arrowStyle} />
         </a>
-        <a href="/" className={`${linkStyle} w-[126px]`}>
+        <a href="/" className={`${linkStyle} max-w-[127px]`}>
           <p>How it works</p>
           <img src={arrow} alt="Arrow" className={arrowStyle} />
         </a>
-        <a href="/" className={`${linkStyle} w-[81px]`}>
+        <a href="/" className={`${linkStyle} max-w-[81px]`}>
           <p>Pricing</p>
           <img src={arrow} alt="Arrow" className={arrowStyle} />
         </a>
       </div>
-      <div className="w-[269px] h-[52px] flex items-center gap-[22px]">
-        <button className={`${buttonStyle} w-[41px]`}>Docs</button>
-        <button className={`${buttonStyle} w-[49px]`}>Demo</button>
+      <div className="max-w-[269px] h-[52px] flex items-center gap-[22px]">
+        <button className={`${buttonStyle} max-w-[41px]`}>Docs</button>
+        <button className={`${buttonStyle} max-w-[49px]`}>Demo</button>
         <button
           className={`${buttonStyle} px-[24px] py-[14px] border-2 
         rounded-xl hover:bg-white hover:text-black`}
