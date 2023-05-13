@@ -89,17 +89,18 @@ function Home() {
         <img
           src={section}
           alt="Section_Img"
-          className="w-[1120px] h-[658px] block object-cover rounded-xl"
+          className={`w-[1120px] h-[658px] block object-cover rounded-xl 
+          cursor-pointer`}
         />
         <img
           src={leftArrow}
           alt="Left_Arrow"
-          className="absolute left-[45px] top-[307px] block"
+          className="absolute left-[45px] top-[307px] block cursor-pointer"
         />
         <img
           src={rightArrow}
           alt="Right_Arrow"
-          className="absolute right-[32px] top-[297px] block"
+          className="absolute right-[32px] top-[297px] block cursor-pointer"
         />
       </div>
     </div>
