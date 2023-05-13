@@ -84,15 +84,23 @@ function Home() {
 
       <div
         className="absolute z-40 top-[613px] left-[283.5px] w-[1353px] h-[658px]
-      border-4 border-red-700 flex items-center justify-center"
+       flex items-center justify-center backdrop-blur"
       >
         <img
           src={section}
           alt="Section_Img"
           className="w-[1120px] h-[658px] block object-cover rounded-xl"
         />
-        <img src={leftArrow} alt="Left_Arrow" className="absolute" />
-        <img src={rightArrow} alt="Right_Arrow" className="absolute" />
+        <img
+          src={leftArrow}
+          alt="Left_Arrow"
+          className="absolute left-[45px] top-[307px] block"
+        />
+        <img
+          src={rightArrow}
+          alt="Right_Arrow"
+          className="absolute right-[32px] top-[297px] block"
+        />
       </div>
     </div>
   );

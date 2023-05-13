@@ -3,7 +3,7 @@ import React from 'react';
 import logo from '../assets/img/logo.png';
 import arrow from '../assets/img/arrow.png';
 
-const linkStyle = `max-w-[96px] h-[24px] flex items-center gap-[12px] 
+const linkStyle = `h-[24px] flex items-center gap-[12px] 
 font-poppins text-white text-base cursor-pointer`;
 const arrowStyle = 'max-w-[12px] h-[16px] object-cover';
 const buttonStyle = 'font-poppins text-base text-white';
@@ -22,7 +22,7 @@ function Navbar() {
           <p>Features</p>
           <img src={arrow} alt="Arrow" className={arrowStyle} />
         </a>
-        <a href="/" className={`${linkStyle} max-w-[127px]`}>
+        <a href="/" className={`${linkStyle} max-w-[126px]`}>
           <p>How it works</p>
           <img src={arrow} alt="Arrow" className={arrowStyle} />
         </a>
