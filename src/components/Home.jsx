@@ -4,7 +4,7 @@ import group from '../assets/img/group.png';
 import arrow from '../assets/img/arrow.png';
 import homeBg from '../assets/img/home-bg.png';
 import vector from '../assets/img/Vector.png';
-import patern from '../assets/img/pattern.png';
+import dotPattern from '../assets/img/dot-pattern.svg';
 import section from '../assets/img/section.png';
 import leftArrow from '../assets/img/left-arrow.png';
 import rightArrow from '../assets/img/right-arrow.png';
@@ -38,7 +38,8 @@ function Home() {
             <button
               className="w-[180px] h-[52px] font-poppins text-base
               leading-[150%] px-[44px] py-[14px] bg-buttonBg rounded-xl
-              hover:bg-indigo-600 hover:text-white"
+              transition delay-100 ease-linear hover:bg-indigo-600 
+              hover:text-white"
             >
               Get started
             </button>
@@ -70,15 +71,14 @@ function Home() {
         <img
           src={vector}
           alt="Vector_Img"
-          className="absolute z-20 right-[400px] top-[120px] w-[256px] 
+          className="absolute z-20 right-[400px] top-[121px] w-[256px] 
           h-[540px]"
         />
 
         <img
-          src={patern}
+          src={dotPattern}
           alt="Patern_Img"
-          className="absolute z-10 right-0 top-[191px] w-[895px] h-[864.43px]
-          object-cover"
+          className="absolute z-10 right-0 top-[191px] w-[895px] h-[864.43px]"
         />
       </div>
 

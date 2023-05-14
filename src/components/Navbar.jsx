@@ -43,7 +43,7 @@ font-poppins ${
       }`}
     >
       <div
-        className=" mx-auto max-w-[1200px] h-[100px] flex 
+        className=" mx-auto max-w-[1200px] max-h-[100px] flex 
       items-center py-[24px] gap-[88px]"
       >
         <a href="/">
@@ -83,10 +83,11 @@ font-poppins ${
           <button className={`${buttonStyle} max-w-[41px]`}>Docs</button>
           <button className={`${buttonStyle}`}>Demo</button>
           <button
-            className={`${buttonStyle} px-[24px] py-[14px] rounded-xl
+            className={`${buttonStyle} px-[24px] py-[14px] rounded-xl 
+            transition delay-100 ease-linear 
             ${
               isScroll
-                ? 'bg-buttonBg'
+                ? 'bg-buttonBg hover:bg-indigo-600 hover:text-white'
                 : 'border-2 hover:bg-white hover:text-black'
             }`}
           >
