@@ -12,15 +12,15 @@ import rightArrow from '../assets/img/right-arrow.png';
 function Home() {
   return (
     <div className="-mt-[100px]">
-      <div className="relative z-40 h-[757px] bg-gradient">
+      <div className="relative z-40 h-[757px] bg-gradient pt-[159px]">
         <div
-          className="relativ z-50 max-w-[689px] flex flex-col 
-          items-center mx-auto gap-[44px] pt-[159px]"
+          className="relative z-30 max-w-[689px] flex flex-col
+          items-center mx-auto gap-[44px]"
         >
           <p
-            className="h-[176px] max-w-[628px] flex flex-col items-center 
+            className="h-[176px] max-w-[628.5px] flex flex-col items-center 
             mt-[8px] text-center font-poppins font-bold text-[70px] text-white 
-            leading-[125%]"
+            leading-[87.5px]"
           >
             New generation
             <br />
@@ -58,22 +58,27 @@ function Home() {
             </a>
           </div>
 
-          <img src={group} alt="Group_img" className="absolute right-[635px]" />
-        </div>
+          <img
+            src={group}
+            alt="Group_img"
+            className="absolute top-0 
+           left-[634px]"
+          />
 
-        <img
-          src={homeBg}
-          alt="HomeBg"
-          className="absolute z-[-100] left-[800px] top-[191px] w-[492px] 
-        h-[507px] blur-[10px]"
-        />
+          <img
+            src={homeBg}
+            alt="HomeBg"
+            className="absolute z-[-100] right-1 top-[40px] w-[492px] 
+         h-[507px] blur-[10px]"
+          />
 
-        <img
-          src={vector}
-          alt="Vector_Img"
-          className="absolute z-20 right-[400px] top-[121px] w-[256px] 
+          <img
+            src={vector}
+            alt="Vector_Img"
+            className="absolute z-10 right-[-180px] top-[-38px] w-[256px] 
           h-[540px]"
-        />
+          />
+        </div>
 
         <img
           src={dotPattern}
