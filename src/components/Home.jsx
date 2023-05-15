@@ -12,13 +12,13 @@ import rightArrow from '../assets/img/right-arrow.png';
 function Home() {
   return (
     <div className="-mt-[100px]">
-      <div className="relative z-40 h-[757px] bg-gradient pt-[159px]">
+      <div className="relative z-30 h-[757px] bg-gradient pt-[159px]">
         <div
           className="relative z-30 max-w-[689px] flex flex-col
           items-center mx-auto gap-[44px]"
         >
           <p
-            className="h-[176px] max-w-[628.5px] flex flex-col items-center 
+            className="h-[176px] min-w-[628.5px] flex flex-col items-center 
             mt-[8px] text-center font-poppins font-bold text-[70px] text-white 
             leading-[87.5px]"
           >
@@ -26,7 +26,10 @@ function Home() {
             <br />
             of administration
           </p>
-          <p className="font-hind text-white text-[22px] leading-[150%]">
+          <p
+            className="min-w-[628.5px] font-hind text-white text-[22px] 
+            leading-[150%]"
+          >
             Create beautiful <strong>admin panel, CRM or CMS </strong> for your
             <strong> laravel application.</strong>
           </p>
@@ -87,26 +90,32 @@ function Home() {
         />
       </div>
 
-      <div
-        className="absolute z-40 top-[613px] left-[283.5px] w-[1353px] h-[658px]
-       flex items-center justify-center backdrop-blur"
-      >
-        <img
-          src={section}
-          alt="Section_Img"
-          className={`w-[1120px] h-[658px] block object-cover rounded-xl 
-          cursor-pointer`}
-        />
-        <img
-          src={leftArrow}
-          alt="Left_Arrow"
-          className="absolute left-[45px] top-[307px] block cursor-pointer"
-        />
-        <img
-          src={rightArrow}
-          alt="Right_Arrow"
-          className="absolute right-[32px] top-[297px] block cursor-pointer"
-        />
+      <div className="flex items-center justify-center">
+        <div
+          className="absolute z-30 top-[613px] w-[1000px] h-[488px]
+       flex items-start justify-center backdrop-blur-[6.5px] xl:w-[1353px]
+       xl:h-[688px]"
+        >
+          <img
+            src={section}
+            alt="Section_Img"
+            className={`w-[768px] h-[453px] block object-cover rounded-[22px] 
+            cursor-pointer shadow-navSchadow border-[1px] border-navBorder
+            xl:w-[1120px] xl:h-[658px]`}
+          />
+          <img
+            src={leftArrow}
+            alt="Left_Arrow"
+            className="absolute left-[45px] top-[200px] block cursor-pointer 
+            xl:top-[307px]"
+          />
+          <img
+            src={rightArrow}
+            alt="Right_Arrow"
+            className="absolute right-[32px] top-[188px] block cursor-pointer
+            xl:top-[297px]"
+          />
+        </div>
       </div>
     </div>
   );
